@@ -8,7 +8,57 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: AddPublicService
+  version: "1.0"
   gitServerName: srcCtrl_gitlab_shared_Arti
   gitUrl: https://gitlab.com/ArtiKhareGitlab
   gitUsername: ArtiKhareGitlab
   gitBranch: master
+services:
+- serviceName: project.serengetigh1008.integrations:en
+  packages:
+  - name: SerengetiGH1008Project
+    version: "1.0"
+  - name: AddPublicService
+    version: "1.0"
+- serviceName: pub.security:encrypt
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
+- serviceName: pub.security:decrypt
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
+- serviceName: project.serengetigh1008.integrations:ff
+  packages:
+  - name: SerengetiGH1008Project
+    version: "1.0"
+  - name: AddPublicService
+    version: "1.0"
+- serviceName: pub.xmldata:xmlDataToXMLString
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
+- serviceName: project.serengetigh1008.integrations:gitlabfs
+  packages:
+  - name: SerengetiGH1008Project
+    version: "1.0"
+  - name: AddPublicService
+    version: "1.0"
+- serviceName: AddPublicService:addpublicService
+  packages:
+  - name: AddPublicService
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
+- serviceName: project.serengetigh1008.integrations:ss
+  packages:
+  - name: SerengetiGH1008Project
+    version: "1.0"
+  - name: AddPublicService
+    version: "1.0"
+- serviceName: pub.xml:documentToXMLString
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
